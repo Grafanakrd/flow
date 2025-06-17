@@ -1,0 +1,7 @@
+nodes:
+  - id: "{{ host.name }}"
+    label: "{{ host.name }}"
+    data: { ip: "{{ host.ip }}" }
+edges:
+  - from: "{{ source.host }}"
+    to: "{{ target.host }}"
